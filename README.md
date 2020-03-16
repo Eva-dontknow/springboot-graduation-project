@@ -1,14 +1,14 @@
 Graduation-Project 
 ===========================
-#### Explanation
-######基于Web框架课程，设计出一个导师和学生的双向选择的小系统
+### Explanation
+#####基于Web框架课程，设计出一个导师和学生的双向选择的小系统
 
-#### Configuration
+### Configuration
 >idea 2019.3.3<br>
 >MySQL 8.0 CE<br>
 >Git 2.22.0
 
-#### UsersAndFunctions
+### UsersAndFunctions
 >教师
 >* 登录：导入多门课程成绩单Excel表格<br>
 >* 为课程设置最低分数/权重；保密算法<br>
@@ -22,9 +22,9 @@ Graduation-Project
 >* 是否有名额，无名额友好提示
 >* 后台并判断
 >* ······
-#### Understanding
+### Understanding
 >懵
-#### Log
+### Log
   >2020.3.16
   >* 写出实体之间的关系
   >* 基本了解MD的书写规范
