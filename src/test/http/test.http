@@ -3,6 +3,14 @@ GET http://localhost:8080/api/teacher/index
 Authorization: {{token}}
 
 ###
+GET http://localhost:8080/api/tutor/excuteStudent
+Authorization: {{token}}
+
+###
+GET http://localhost:8080/api/directions
+Authorization: {{token}}
+
+###
 POST http://localhost:8080/api/teacher/students
 Content-Type: application/json
 Authorization: {{token}}
@@ -25,6 +33,24 @@ Authorization: {{token}}
 
 }
 
+###
+PATCH http://localhost:8080/api/updatePwd
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+  "password": 1001
+}
+
+###
+PATCH http://localhost:8080/api/updatePwd1
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+  "number": 1001,
+  "password": 1001
+}
 ### 查询指定课程
 GET http://localhost:8080/api/teacher/courses/1
 Accept: application/json
@@ -42,6 +68,7 @@ Authorization: {{token}}
 {
   "name": "Web"
 }
+
 ### 全局变量，如果http测试文件被改动，可能失效。须重修登录
 POST http://localhost:8080/api/login
 Content-Type: application/json

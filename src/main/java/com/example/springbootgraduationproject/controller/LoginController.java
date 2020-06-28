@@ -2,7 +2,10 @@ package com.example.springbootgraduationproject.controller;
 
 import com.example.springbootgraduationproject.component.EncryptComponent;
 import com.example.springbootgraduationproject.component.MyToken;
+import com.example.springbootgraduationproject.entity.Student;
+import com.example.springbootgraduationproject.entity.Teacher;
 import com.example.springbootgraduationproject.entity.User;
+import com.example.springbootgraduationproject.service.TeacherService;
 import com.example.springbootgraduationproject.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,6 +19,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import javax.servlet.http.HttpServletResponse;
 import java.security.KeyPairGenerator;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -28,6 +32,8 @@ public class LoginController {
     private String roleStudent;//对不同角色渲染不同界面
     @Autowired
     private UserService userService;
+    @Autowired
+    private TeacherService teacherService;
     @Autowired
     private PasswordEncoder encoder;
     @Autowired

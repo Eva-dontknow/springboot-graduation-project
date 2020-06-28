@@ -61,6 +61,9 @@ public class CourseService {
 
         student.setTeacher(new Teacher(tid));
         /*加一个判断，判断该学生是否与其他老师建立联系*/
+        /*
+        *
+        * */
         studentRepository.save(student);
         // studentRepository.refresh(student);
         return student;

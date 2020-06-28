@@ -21,7 +21,7 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-
+    private double weight;
     //和选课类的一对多关系
     @OneToMany(mappedBy = "course", cascade = CascadeType.REMOVE)
     private List<Elective> electives;

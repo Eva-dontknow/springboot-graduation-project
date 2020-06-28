@@ -28,6 +28,7 @@ public class Student {
     // @NotBlank(message = "姓名不能为空")//@NotBlank只能作用在String上
     //使用@NotBlank等注解时，一定要和@valid一起使用，不然@NotBlank不起作用
     private double weightedGrade;//当前加权
+    private String mydirct;
     //对密码不进行序列化
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;

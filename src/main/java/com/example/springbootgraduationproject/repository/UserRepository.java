@@ -9,4 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface UserRepository extends BaseRepository<User,Integer>{
     @Query("from User u where u.number=:num")
     User find(@Param("num") int num);
+//或者
+    User findById(int id);
 }
